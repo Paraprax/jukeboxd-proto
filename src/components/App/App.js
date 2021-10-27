@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <h1>
-        Ju<span className="highlight">keb</span>oxd
+        Jukeboxd
       </h1>
       <div className="App">
         {/* <!-- TODO: Add a SearchBar component --> */}
