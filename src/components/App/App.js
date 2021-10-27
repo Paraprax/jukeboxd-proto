@@ -2,16 +2,17 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        Ju<span className="highlight">keb</span>oxd
+      </h1>
+      <div className="App">
+        {/* <!-- Add a SearchBar component --> */}
+        <div className="App-playlist">
+          {/* <!-- Add a SearchResults component -->
+      <!-- Add a Playlist component --> */}
+        </div>
+      </div>
     </div>
   );
 }
