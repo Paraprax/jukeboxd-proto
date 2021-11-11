@@ -4,6 +4,13 @@ import "./Tracklist.css";
 
 export class TrackList extends React.Component {
   render() {
-    return <div className="TrackList">{/* <!-- TODO: Render a set of track components using array mapping  --> */}</div>;
+    return (
+      <div className="TrackList">
+        {/* <!-- TODO: Render a set of track components using array mapping  --> */}
+        <p>Orchestral Manoeuvers In The Dark - Enola Gay</p>
+        <p>New Order - Crystal</p>
+        <p>Vangelis - Blade Runner Blues</p>
+      </div>
+    );
   }
 }
