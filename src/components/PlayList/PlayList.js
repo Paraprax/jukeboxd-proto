@@ -1,6 +1,6 @@
 import React from "react";
-import { Tracklist } from ".Tracklist";
-import './PlayList.css';
+import { Tracklist } from "../TrackList/Tracklist.js";
+import "./PlayList.css";
 
 export class PlayList extends React.Component {
   render() {
