@@ -2,6 +2,13 @@ import React from "react";
 import "./App.css";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchResults: [{ name: "trackname", artist: "trackartist", album: "trackalbum", id: "trackId" }],
+    };
+  }
+
   render() {
     return (
       <div>
