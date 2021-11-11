@@ -1,5 +1,5 @@
 import React from "react";
-import './Track.css';
+import "./Track.css";
 
 export class Track extends React.Component {
   renderAction() {
@@ -9,12 +9,13 @@ export class Track extends React.Component {
       return <button className="Track-action">+</button>; //adder-button
     }
   }
+
   render() {
     return (
       <div className="Track">
         <div className="Track-information">
-          {/* <h3><!-- TODO: render track name --></h3> */}
-          {/* <p><!-- TODO: render artist name --> | <!-- TODO: render album name --></p> */}
+          {/* <h3><!-- track name will go here --></h3> */}
+          {/* <p><!-- track artist will go here--> | <!-- track album will go here --></p> */}
         </div>
         {this.renderAction}
       </div>
