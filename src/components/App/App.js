@@ -1,4 +1,5 @@
 import React from "react";
+import { SearchResults } from "../SearchResults/SearchResults";
 import "./App.css";
 
 class App extends React.Component {
@@ -16,8 +17,10 @@ class App extends React.Component {
         <div className="App">
           {/* <!-- TODO: Add a SearchBar component --> */}
           <div className="App-playlist">
-            {/* <!-- TODO: Add a SearchResults component -->
-            <!-- TODO: Add a Playlist component --> */}
+            {
+              <SearchResults searchResults={this.state.searchResults} />
+              /* <!-- TODO: Add a Playlist component --> */
+            }
           </div>
         </div>
       </div>
