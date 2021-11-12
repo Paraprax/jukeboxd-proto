@@ -7,6 +7,12 @@ class App extends React.Component {
     super(props);
     this.state = {
       searchResults: [{ name: "trackname", artist: "trackartist", album: "trackalbum", id: "trackId" }],
+      playlistName: "Surf Rock",
+      playlistTracks: [
+        { name: "Surf's Up", artist: "The Benihanas", album: "Coconut Bay", id: "1" },
+        { name: "Shore Leave", artist: "The AWOLs", album: "Going AWOL", id: "2" },
+        { name: "Blue Hawaii", artist: "Elvis Presley", album: "Blue Hawaii", id: "3" },
+      ],
     };
   }
 
