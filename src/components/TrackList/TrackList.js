@@ -7,13 +7,12 @@ export class TrackList extends React.Component {
     return (
       <div className="TrackList">
         {this.props.tracks.map((track) => (
-          <Track track={track} />
+          <Track track={track} onAdd={this.props.onAdd} />
         ))}
-
       </div>
     );
   }
-} 
+}
 
 /* <p>Orchestral Manoeuvers In The Dark - Enola Gay</p>
 <p>New Order - Crystal</p>
