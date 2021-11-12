@@ -1,6 +1,6 @@
 import React from "react";
 import { SearchResults } from "../SearchResults/SearchResults";
-import { Playlist } from "../PlayList/PlayList.js";
+import { PlayList } from "../PlayList/PlayList.js";
 import "./App.css";
 
 class App extends React.Component {
@@ -35,7 +35,7 @@ class App extends React.Component {
           {/* <!-- TODO: Add a SearchBar component --> */}
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} />
-            <Playlist playlist={this.state.playlistName} playlistTracks={this.state.playlistTracks} />
+            <PlayList playlist={this.state.playlistName} playlistTracks={this.state.playlistTracks} />
           </div>
         </div>
       </div>
