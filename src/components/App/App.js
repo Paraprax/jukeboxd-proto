@@ -15,6 +15,7 @@ class App extends React.Component {
         { name: "Blue Hawaii", artist: "Elvis Presley", album: "Blue Hawaii", id: "3" },
       ],
     };
+    this.addTrack = this.addTrack.bind(this);
   }
 
   addTrack(track) {
