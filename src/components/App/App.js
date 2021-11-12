@@ -1,6 +1,7 @@
 import React from "react";
 import { SearchResults } from "../SearchResults/SearchResults";
 import { PlayList } from "../PlayList/PlayList.js";
+import { SearchBar } from "../SearchBar/SearchBar.js";
 import "./App.css";
 
 export class App extends React.Component {
@@ -44,7 +45,7 @@ export class App extends React.Component {
       <div>
         <h1>Jukeboxd</h1>
         <div className="App">
-          {/* <!-- TODO: Add a SearchBar component --> */}
+          <SearchBar />
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} />
             <PlayList playlist={this.state.playlistName} playlistTracks={this.state.playlistTracks} onRemove={this.removeTrack} onNameChange={this.renamePlaylist} />
@@ -54,5 +55,3 @@ export class App extends React.Component {
     );
   }
 }
-
-export default App;
