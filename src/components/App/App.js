@@ -1,5 +1,6 @@
 import React from "react";
 import { SearchResults } from "../SearchResults/SearchResults";
+import { Playlist } from "../PlayList/PlayList.js";
 import "./App.css";
 
 class App extends React.Component {
@@ -23,10 +24,8 @@ class App extends React.Component {
         <div className="App">
           {/* <!-- TODO: Add a SearchBar component --> */}
           <div className="App-playlist">
-            {
-              <SearchResults searchResults={this.state.searchResults} />
-              /* <!-- TODO: Add a Playlist component --> */
-            }
+            <SearchResults searchResults={this.state.searchResults} />
+            <Playlist playlist={this.state.playlistName} playlistTracks={this.state.playlistTracks} />
           </div>
         </div>
       </div>
