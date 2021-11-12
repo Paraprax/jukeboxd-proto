@@ -3,7 +3,7 @@ import { SearchResults } from "../SearchResults/SearchResults";
 import { PlayList } from "../PlayList/PlayList.js";
 import "./App.css";
 
-class App extends React.Component {
+export class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
