@@ -26,11 +26,12 @@ export class App extends React.Component {
   }
 
   addTrack(track) {
-    if (track.state.playlistTracks.find((alreadySaved) => alreadySaved.id === track.id)) {
+    let tracksArray = track.state.playlistTracks;
+    if (tracksArray.find((alreadySaved) => alreadySaved.id === track.id)) {
       return;
     } else {
-      this.state.playlistTracks.push(track);
-      this.setState({ playlistTracks: this.state.playlistTracks });
+      tracksArray.push(track);
+      this.setState({ playlistTracks: tracksArray });
     }
   }
 
