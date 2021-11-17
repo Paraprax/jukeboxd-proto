@@ -8,7 +8,11 @@ export class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchResults: [{ name: "trackname", artist: "trackartist", album: "trackalbum", id: "trackId" }],
+      searchResults: [
+        { name: "trackname1", artist: "trackartist1", album: "trackalbum1", id: "1" },
+        { name: "trackname2", artist: "trackartist2", album: "trackalbum2", id: "2" },
+        { name: "trackname3", artist: "trackartist3", album: "trackalbum3", id: "3" },
+      ],
       playlistName: "Surf Rock",
       playlistTracks: [
         { name: "Surf's Up", artist: "The Benihanas", album: "Coconut Bay", id: "1" },
